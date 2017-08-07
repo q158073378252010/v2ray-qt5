@@ -1,5 +1,5 @@
 sudo: required
-dist: trusty
+dist: xenial
 language: cpp
 cache: apt
 
@@ -8,8 +8,9 @@ branches:
     - 'master'
 
 before_install:
+  - sudo add-apt-repository ppa:ubuntu-toolchain-r/test -y
   - sudo apt-get -qq update
-  - sudo apt-get -qq install -y qt5-qmake qt5-default qtbase5-dev gcc-4.8 libqrencode-dev libzbar-dev libappindicator-dev
+  - sudo apt-get -qq install -y qt5-qmake qt5-default qtbase5-dev gcc-5 g++-5 libqrencode-dev libzbar-dev libappindicator-dev
 
 script:
   - qmake
