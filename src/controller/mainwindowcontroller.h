@@ -24,6 +24,7 @@ public slots:
     void onQRCodeCapturerResultFound(const QString &uri);
     void onAbout();
     void onBugReport();
+    void onQuit();
 };
 
 #endif // MAINWINDOWCONTROLLER_H

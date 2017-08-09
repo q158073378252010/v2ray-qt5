@@ -192,6 +192,16 @@
         </item>
        </widget>
       </item>
+      <item row="10" column="0">
+       <widget class="QLabel" name="LocalPortLabel">
+        <property name="text">
+         <string>Local Port</string>
+        </property>
+       </widget>
+      </item>
+      <item row="10" column="1">
+       <widget class="QLineEdit" name="LocalPortEdit"/>
+      </item>
      </layout>
     </widget>
    </item>

@@ -3,6 +3,8 @@
 
 #include <QDialog>
 
+class VmessConfigModel;
+
 namespace Ui {
 class EditDialog;
 }
@@ -19,6 +21,8 @@ private:
     Ui::EditDialog *ui;
 private slots:
     void save();
+signals:
+    void signalAddServer(VmessConfigModel* server);
 };
 
 #endif // EDITDIALOG_H

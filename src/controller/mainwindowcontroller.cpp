@@ -1,5 +1,6 @@
 #include "mainwindowcontroller.h"
-
+#include <QApplication>
+#include "src/controller/configcontroller.h"
 MainWindowController::MainWindowController(QWidget *parent) : QWidget(parent)
 {
 
@@ -65,6 +66,12 @@ void MainWindowController::onAbout(){
 
 void MainWindowController::onBugReport(){
     QDesktopServices::openUrl(MainWindowController::BugReport);
+}
+
+void MainWindowController::onQuit(){
+    ConfigController::getInstance().saveConfig();
+    QApplication::quit();
+
 }
 
 

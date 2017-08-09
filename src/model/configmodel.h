@@ -10,6 +10,7 @@
 #include <QTextStream>
 #include <QDebug>
 
+
 #include "vmessconfigmodel.h"
 #include "inboundmodel.h"
 
@@ -19,12 +20,14 @@ class ConfigModel : public QObject
 public:
     explicit ConfigModel(QObject *parent = 0);
     explicit ConfigModel(const QString &configuration, QObject *parent = 0);
-
+    QString V2RayBin;
     bool Singleton;
     int ActiveServer;
-    QMap<int,ServerConfigModel*> *Servers;
-
+    QList<VmessConfigModel*> *Servers;
+    void save();
 signals:
+private:
+    QString configFile;
 
 public slots:
 };

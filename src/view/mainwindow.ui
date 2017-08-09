@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>686</width>
+    <width>633</width>
     <height>401</height>
    </rect>
   </property>
@@ -45,7 +45,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>686</width>
+     <width>633</width>
      <height>28</height>
     </rect>
    </property>
@@ -101,15 +101,30 @@
    <addaction name="menu_Setting"/>
    <addaction name="menu_Help"/>
   </widget>
-  <widget class="QToolBar" name="mainToolBar">
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextBesideIcon</enum>
+   </property>
    <attribute name="toolBarArea">
     <enum>TopToolBarArea</enum>
    </attribute>
    <attribute name="toolBarBreak">
-    <bool>false</bool>
+    <bool>true</bool>
    </attribute>
+   <addaction name="action_Connect"/>
+   <addaction name="action_Disconnect"/>
+   <addaction name="separator"/>
+   <addaction name="action_Edit"/>
+   <addaction name="action_Delete"/>
+   <addaction name="action_Share"/>
+   <addaction name="separator"/>
+   <addaction name="actionMove_Up"/>
+   <addaction name="action_Move_Down"/>
   </widget>
-  <widget class="QStatusBar" name="statusBar"/>
   <action name="action_Import_Connections_from_gui_config_json">
    <property name="icon">
     <iconset resource="../resources/icons.qrc">

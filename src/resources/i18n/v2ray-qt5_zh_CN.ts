@@ -105,6 +105,11 @@
         <source>TLS</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <location filename="../../view/editdialog.ui" line="198"/>
+        <source>Local Port</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>MainWindow</name>
@@ -144,92 +149,97 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../view/mainwindow.ui" line="119"/>
+        <location filename="../../view/mainwindow.ui" line="107"/>
+        <source>toolBar</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../view/mainwindow.ui" line="134"/>
         <source>&amp;Import Connections from json file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../view/mainwindow.ui" line="128"/>
+        <location filename="../../view/mainwindow.ui" line="143"/>
         <source>&amp;Export as json file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../view/mainwindow.ui" line="131"/>
+        <location filename="../../view/mainwindow.ui" line="146"/>
         <source>Export as json file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../view/mainwindow.ui" line="140"/>
+        <location filename="../../view/mainwindow.ui" line="155"/>
         <source>&amp;Save</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../view/mainwindow.ui" line="149"/>
+        <location filename="../../view/mainwindow.ui" line="164"/>
         <source>&amp;Exit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../view/mainwindow.ui" line="158"/>
+        <location filename="../../view/mainwindow.ui" line="173"/>
         <source>&amp;Edit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../view/mainwindow.ui" line="167"/>
+        <location filename="../../view/mainwindow.ui" line="182"/>
         <source>&amp;Share</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../view/mainwindow.ui" line="176"/>
+        <location filename="../../view/mainwindow.ui" line="191"/>
         <source>&amp;Delete</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../view/mainwindow.ui" line="185"/>
+        <location filename="../../view/mainwindow.ui" line="200"/>
         <source>&amp;Connect</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../view/mainwindow.ui" line="194"/>
+        <location filename="../../view/mainwindow.ui" line="209"/>
         <source>D&amp;isconnect</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../view/mainwindow.ui" line="203"/>
+        <location filename="../../view/mainwindow.ui" line="218"/>
         <source>Move &amp;Up</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../view/mainwindow.ui" line="212"/>
+        <location filename="../../view/mainwindow.ui" line="227"/>
         <source>&amp;Move Down</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../view/mainwindow.ui" line="221"/>
+        <location filename="../../view/mainwindow.ui" line="236"/>
         <source>&amp;General Settings</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../view/mainwindow.ui" line="230"/>
+        <location filename="../../view/mainwindow.ui" line="245"/>
         <source>&amp;About</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../view/mainwindow.ui" line="239"/>
+        <location filename="../../view/mainwindow.ui" line="254"/>
         <source>About &amp;Qt</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../view/mainwindow.ui" line="248"/>
+        <location filename="../../view/mainwindow.ui" line="263"/>
         <source>Bug &amp;Report</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../view/mainwindow.ui" line="257"/>
+        <location filename="../../view/mainwindow.ui" line="272"/>
         <source>&amp;Manually</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../view/mainwindow.ui" line="266"/>
+        <location filename="../../view/mainwindow.ui" line="281"/>
         <source>&amp;Scan QR Code</source>
         <translation type="unfinished"></translation>
     </message>
@@ -237,7 +247,7 @@
 <context>
     <name>MainWindowController</name>
     <message>
-        <location filename="../../controller/mainwindowcontroller.cpp" line="62"/>
+        <location filename="../../controller/mainwindowcontroller.cpp" line="63"/>
         <source>About</source>
         <translation type="unfinished"></translation>
     </message>
@@ -259,6 +269,52 @@
     </message>
 </context>
 <context>
+    <name>ServerItemModel</name>
+    <message>
+        <location filename="../../model/serveritemmodel.cpp" line="20"/>
+        <source>Connected</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../model/serveritemmodel.cpp" line="21"/>
+        <source>Disconnected</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>ServersTableModel</name>
+    <message>
+        <location filename="../../model/serverstablemodel.cpp" line="14"/>
+        <source>Name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../model/serverstablemodel.cpp" line="16"/>
+        <source>Server</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../model/serverstablemodel.cpp" line="18"/>
+        <source>Status</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../model/serverstablemodel.cpp" line="20"/>
+        <source>Latency</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../model/serverstablemodel.cpp" line="22"/>
+        <source>Local Port</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../model/serverstablemodel.cpp" line="24"/>
+        <source>Last Used</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>ShareDialog</name>
     <message>
         <location filename="../../view/sharedialog.ui" line="20"/>
@@ -273,6 +329,20 @@
     <message>
         <location filename="../../view/sharedialog.cpp" line="43"/>
         <source>Save QR Code</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>TaskBarNotifyController</name>
+    <message>
+        <location filename="../../controller/taskbarnotifycontroller.cpp" line="18"/>
+        <source>Restore</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../controller/taskbarnotifycontroller.cpp" line="19"/>
+        <location filename="../../controller/taskbarnotifycontroller.cpp" line="21"/>
+        <source>Exit</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

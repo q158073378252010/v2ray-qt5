@@ -1,15 +1,22 @@
 #ifndef VMESSCONFIGMODEL_H
 #define VMESSCONFIGMODEL_H
 
+#include <QDate>
+#include <QDateTime>
+#include <QTimeZone>
+#include <QObject>
 #include "serverconfigmodel.h"
 
 
-class VmessConfigModel : public ServerConfigModel
+class VmessConfigModel : public QObject
 {
+    Q_OBJECT
 public:
-    VmessConfigModel(int Index);
-    VmessConfigModel(int Index,QString Address,int Port,QString UserId,int UserAlterId,QString UserSecurity,QString Remarks,QString HeaderType,QString RequestHost,QString StreamSecurity);
-    int Index;
+    bool isRunning();
+    int getLatency();
+    VmessConfigModel();
+    VmessConfigModel(QString Address,int Port,QString UserId,int UserAlterId,QString UserSecurity,QString Remarks,QString HeaderType,QString RequestHost,QString StreamSecurity,int LocalPort,uint LastUseTime);
+    ~VmessConfigModel();
     QString Protocol;
     QString Address;
     int Port;
@@ -20,7 +27,8 @@ public:
     QString HeaderType;
     QString RequestHost;
     QString StreamSecurity;
-
+    QDateTime LastUseTime;
+    int LocalPort;
 };
 
 #endif // VMESSCONFIGMODEL_H

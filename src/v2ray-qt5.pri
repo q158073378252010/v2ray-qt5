@@ -12,7 +12,8 @@ SOURCES +=  src/main.cpp\
     src/controller/mainwindowcontroller.cpp \
     src/utils/urihelper.cpp \
     $$PWD/model/serverstablemodel.cpp \
-    $$PWD/model/serveritemmodel.cpp
+    $$PWD/model/serveritemmodel.cpp \
+    $$PWD/controller/taskbarnotifycontroller.cpp
 
 HEADERS  += src/view/mainwindow.h \
     src/controller/configcontroller.h \
@@ -27,7 +28,8 @@ HEADERS  += src/view/mainwindow.h \
     src/controller/mainwindowcontroller.h \
     src/utils/urihelper.h \
     $$PWD/model/serverstablemodel.h \
-    $$PWD/model/serveritemmodel.h
+    $$PWD/model/serveritemmodel.h \
+    $$PWD/controller/taskbarnotifycontroller.h
 
 FORMS    += src/view/mainwindow.ui \
     src/view/editdialog.ui \
