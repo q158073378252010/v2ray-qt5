@@ -1,0 +1,24 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>icons/export-icon.png</file>
+        <file>icons/import-icon.png</file>
+        <file>icons/save-icon.png</file>
+        <file>icons/exit-icon.png</file>
+        <file>icons/config-add-icon.png</file>
+        <file>icons/config-delete-icon.png</file>
+        <file>icons/config-share-icon.png</file>
+        <file>icons/down-icon.png</file>
+        <file>icons/up-icon.png</file>
+        <file>icons/connect-icon.png</file>
+        <file>icons/disconnect-icon.png</file>
+        <file>icons/edit-icon.png</file>
+        <file>icons/setting-icon.png</file>
+        <file>icons/about-icon.png</file>
+        <file>icons/report-icon.png</file>
+        <file>icons/qt-icon.png</file>
+        <file>icons/manually-icon.png</file>
+        <file>icons/qrcode-icon.png</file>
+        <file>icons/v2ray_1024.png</file>
+        <file>icons/v2ray.png</file>
+    </qresource>
+</RCC>

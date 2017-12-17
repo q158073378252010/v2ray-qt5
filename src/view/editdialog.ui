@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>EditDialog</class>
+ <widget class="QDialog" name="EditDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>434</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QFrame" name="frame">
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QFormLayout" name="formLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="ProfileNameLabel">
+        <property name="text">
+         <string>Profile Name</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="ProfileNameEdit"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="ServerAddressLabel">
+        <property name="text">
+         <string>Server Address</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="ServerAddressEdit"/>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="ServerPortLabel">
+        <property name="text">
+         <string>Server Port</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="ServerPortEdit"/>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="UserIdLabel">
+        <property name="text">
+         <string>User ID</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLineEdit" name="UserIdEdit"/>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="UserAlterIdLabel">
+        <property name="text">
+         <string>User AlterID</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QLineEdit" name="UserAlterIdEdit">
+        <property name="inputMethodHints">
+         <set>Qt::ImhNone</set>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="UserSecurityLabel">
+        <property name="text">
+         <string>User Security</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0">
+       <widget class="QLabel" name="NetworkLabel">
+        <property name="text">
+         <string>Network</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="0">
+       <widget class="QLabel" name="HeaderTypeLabel">
+        <property name="text">
+         <string>Header Type</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="1">
+       <widget class="QComboBox" name="HeaderTypeComboBox">
+        <item>
+         <property name="text">
+          <string>none</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>http</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QComboBox" name="UserSecurityComboBox">
+        <item>
+         <property name="text">
+          <string>aes-128-cfb</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>aes-128-gcm</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>chacha20-poly1305</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>none</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="8" column="0">
+       <widget class="QLabel" name="RequestHostLabel">
+        <property name="text">
+         <string>Request Host</string>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="1">
+       <widget class="QLineEdit" name="RequestHostEdit"/>
+      </item>
+      <item row="6" column="1">
+       <widget class="QComboBox" name="NetworkComboBox">
+        <item>
+         <property name="text">
+          <string>TCP</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>KCP</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>WebSocket</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="9" column="0">
+       <widget class="QLabel" name="StreamSecurityLabel">
+        <property name="text">
+         <string>Stream Security</string>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="1">
+       <widget class="QComboBox" name="StreamSecurityComboBox">
+        <item>
+         <property name="text">
+          <string>none</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>TLS</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="10" column="0">
+       <widget class="QLabel" name="LocalPortLabel">
+        <property name="text">
+         <string>Local Port</string>
+        </property>
+       </widget>
+      </item>
+      <item row="10" column="1">
+       <widget class="QLineEdit" name="LocalPortEdit"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>ProfileNameEdit</tabstop>
+  <tabstop>ServerAddressEdit</tabstop>
+  <tabstop>ServerPortEdit</tabstop>
+  <tabstop>UserIdEdit</tabstop>
+  <tabstop>UserAlterIdEdit</tabstop>
+  <tabstop>UserSecurityComboBox</tabstop>
+  <tabstop>NetworkComboBox</tabstop>
+  <tabstop>HeaderTypeComboBox</tabstop>
+  <tabstop>RequestHostEdit</tabstop>
+  <tabstop>StreamSecurityComboBox</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>EditDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>199</x>
+     <y>409</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>216</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>EditDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>199</x>
+     <y>409</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>216</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
