@@ -1,6 +1,7 @@
 ##test
 sudo: required
-dist: xenial
+#dist: xenial
+dist: trusty
 language: cpp
 cache: apt
 
